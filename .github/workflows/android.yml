@@ -42,6 +42,7 @@ jobs:
                       if info.filename == "mod.json":
                           meta = json.loads(data)
                           meta["geode"] = "v" + meta["geode"].lstrip("v")
+                          meta["version"] = "5.11.2"
                           data = json.dumps(meta, indent=4).encode()
                       dst.writestr(info, data)
 
