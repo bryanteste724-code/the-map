@@ -71,7 +71,7 @@ public:
     }
 
     void registerWithTouchDispatcher() override {
-        CCTouchDispatcher::sharedDispatcher()
+        CCTouchDispatcher::get()
             ->addTargetedDelegate(this, -500, true);
     }
 
